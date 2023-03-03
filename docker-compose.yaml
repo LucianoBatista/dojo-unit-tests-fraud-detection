@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./
+    image: fraud-detection:latest
+    container_name: web
+    hostname: web
+    volumes:
+    - ./:/usr/src/app
+    ports:
+      - 8010:8000
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/foo
+    networks:
+      - default
+    restart: always
+    depends_on:
+      - db
+  
+  db:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=foo
+    restart: always

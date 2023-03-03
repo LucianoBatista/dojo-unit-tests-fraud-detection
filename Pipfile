@@ -7,6 +7,9 @@ name = "pypi"
 fastapi = "==0.91.0"
 uvicorn = "==0.20.0"
 polars = "==0.16.4"
+sqlmodel = "==0.0.8"
+alembic = "==1.9.4"
+asyncpg = "==0.27.0"
 
 [dev-packages]
 black = "*"

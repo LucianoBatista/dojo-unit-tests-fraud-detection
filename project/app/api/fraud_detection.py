@@ -1,7 +1,7 @@
-from project.app.api import content_router
+from project.app.api import fraud_router
 
 
-@content_router.get("/detect")
+@fraud_router.get("/detect")
 def get_content_tree(client_data: str):
     if client_data == "fraudulent":
         return {"message": "Fraudulent client"}
