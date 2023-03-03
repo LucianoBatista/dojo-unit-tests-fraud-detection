@@ -17,3 +17,19 @@ Essa API possui os seguintes componentes:
 # Como Reproduzir o ambiente?
 
 (WIP)
+
+# O que vamos testar?
+
+- Formatação de Input e Output da API
+- Testes da Lógica da API
+- Testes de Interação com o banco da aplicação
+- Testes do modelo
+- Testes do celery
+
+# Conceitos importantes a se aprender do Pytest
+
+- Instalação
+- Configuração
+- Como Funciona?
+- Escrevendo um teste...
+- Parametrizando um teste...
