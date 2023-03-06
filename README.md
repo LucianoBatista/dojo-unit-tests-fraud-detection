@@ -18,6 +18,10 @@ Essa API possui os seguintes componentes:
 
 (WIP)
 
+# The API
+
+![img](docs/imgs/api.png)
+
 # O que vamos testar?
 
 - Formatação de Input e Output da API
